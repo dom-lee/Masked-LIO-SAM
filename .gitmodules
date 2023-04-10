@@ -1,0 +1,6 @@
+[submodule "OpenPCDet_ros"]
+	path = OpenPCDet_ros
+	url = git@github.com:dom-lee/OpenPCDet_ros
+[submodule "LIO-SAM"]
+	path = LIO-SAM
+	url = git@github.com:dom-lee/LIO-SAM.git
