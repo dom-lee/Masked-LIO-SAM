@@ -9,8 +9,10 @@ Simultaneous Localization and Mapping (SLAM) is not robust in dynamic environmen
 
 ## Dependency
 - [ROS](http://wiki.ros.org/ROS/Installation) (Tested with noetic distro)
-- [PCL] (Point Cloud Library)
-- [Eigen]
+- [PCL](https://pointclouds.org/) (Point Cloud Library)
+- Eigen
+- GTSAM 4.0.3
+- geometry_msgs
 
 
 ## System Requirements
