@@ -9,27 +9,51 @@ Simultaneous Localization and Mapping (SLAM) is not robust in dynamic environmen
 
 ## Dependency
 - [ROS](http://wiki.ros.org/ROS/Installation) (Tested with noetic distro)
+- [PCL] (Point Cloud Library)
+- [Eigen]
+
+
+## System Requirements
+- Ubuntu 20.04 LTS
+- ROS Noetic
+- At least 16 GB RAM
+- NVIDIA GPU with CUDA support
+
 
 ## Dataset
 The KITTI raw dataset is used to evaluate Masked LIO-SAM.
 - KITTI (raw) Dataset: (https://www.cvlibs.net/datasets/kitti/raw_data.php)
+
 
 ## Code Download
 ```
 git clone https://github.com/dom-lee/Masked-LIO-SAM/
 ```
 
-## LIO-SAM
+## Build the package
+```
+cd ~/catkin_ws/src
+git clone https://github.com/dom-lee/Masked-LIO-SAM/
+cd ..
+catkin_make
+source devel/setup.bash
+````
 
-in another terminal /
-run the bag file /
-
-## Masked LIO-SAM /
+## Running Masked-LIO-SAM
+```
 cd LIO-SAM/
 roslaunch lio_sam run.launch /
-in another terminal /
+```
+
+## in another terminal 
+```
+source devel/setup.bash
 roslaunch multiple-object-tracking kitti-raw.launch /
+```
 
-
-
+## in another terminal /
+```
+source devel/setup.bash
+rosbag play <path_to_bag_file> /
+```
 
