@@ -32,3 +32,11 @@ roslaunch multiple-object-tracking kitti-raw.launch /
 ```
 rosbag play <path_to_bag_file>
 ```
+
+## Evaluate Trajectories
+Use this script to combine bagfiles from LIO-SAM and Masked LIO-SAM outputs for plotting them together using EVO (https://github.com/MichaelGrupp/evo). 
+Edit `scene` inside `eval/traj_eval.py` to the corresponding KITTI scene, then run:
+```
+cd eval/
+python traj_eval.py 
+```
